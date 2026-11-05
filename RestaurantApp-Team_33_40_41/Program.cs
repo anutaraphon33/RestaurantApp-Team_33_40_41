@@ -17,9 +17,12 @@ namespace RestaurantApp_Team_33_40_41
     {
         static List<Restaurant> restaurants = new List<Restaurant>
     {
-        new Restaurant { Name = "KFC", Type = "Fast Food", Rating = 4.2 },
-        new Restaurant { Name = "MK", Type = "Suki", Rating = 4.7 },
-        new Restaurant { Name = "Fuji", Type = "Japanese", Rating = 4.8 }
+        new Restaurant { Name = "Shabushi", Type = "Buffet Shabu", Rating = 4.5 },
+        new Restaurant { Name = "Pizza Hut", Type = "Pizza", Rating = 4.3 },
+        new Restaurant { Name = "Bar B Q Plaza", Type = "BBQ", Rating = 4.6 },
+        new Restaurant { Name = "Yayoi", Type = "Japanese", Rating = 4.4 },
+        new Restaurant { Name = "S&P", Type = "Thai Food", Rating = 4.1 },
+        new Restaurant { Name = "Chester's", Type = "Grilled Chicken", Rating = 4.8 },
     };
 
         static void Main(string[] args)
@@ -58,11 +61,19 @@ namespace RestaurantApp_Team_33_40_41
         // คน A รับผิดชอบ
         static void AddRestaurant()
         {
-            Console.WriteLine("Not completed");
+            Console.WriteLine("\n===== Restaurant List =====");
+
+            foreach (var restaurant in restaurants)
+            {
+                Console.WriteLine("Restaurant Name: " + restaurant.Name);
+                Console.WriteLine("Restaurant Type: " + restaurant.Type);
+                Console.WriteLine("Restaurant Rating: " + restaurant.Rating);
+                Console.WriteLine("---------------------------");
+            }
         }
 
-        // คน B รับผิดชอบ
-        static void ShowGoodRating()
+            // คน B รับผิดชอบ
+            static void ShowGoodRating()
         {
             Console.WriteLine("Not completed");
         }
